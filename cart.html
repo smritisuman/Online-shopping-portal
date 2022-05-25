@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>All Products - StyleUP</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?
+        family=Poppins:ital,wght@1,200;1,300;1,400;1,500;1,600;1,700&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="logo.png"  width="125px">
+                    
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="productdetails.html">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="C:\Users\smrit\Downloads/icon.jpg" width="30px" height="30px">
+                <img src="menuicon.png" class="menu-icon" 
+                onclick="menutoggle()">
+            </div> 
+        </div>
+
+        <!-----cart item details------>
+        <div class="small-container cart-page">
+            <table>
+                <tr>
+                    <th>product</th>
+                    <th>quantity</th>
+                    <th>subtotal</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="./gallery1.jpeg" >
+                            <div>
+                                <p>Wrap dress</p>
+                                <small>price: $120.00</small><br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$120.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <img src="file:///C:/Users/smrit/Downloads/product-11.jpg" >
+                            <div>
+                                <p>peg trouser</p>
+                                <small>price: $85.00</small><br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td><input type="number" value="1"></td>
+                    <td>$85.00</td>
+                </tr>
+            </table>
+
+            <div class="total-price">
+                <table>
+                    <tr>
+                        <td>subtotal</td>
+                        <td>$205.00</td>
+                    </tr>
+                    <tr>
+                        <td>tax</td>
+                        <td>$25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$230.00</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+<!--------- footer -------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our APP</h3>
+                <p>Download our APP for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="C:\Users\smrit\OneDrive\Pictures/playstore.jpg">
+                    <img src="C:\Users\smrit\OneDrive\Pictures/appstore.jpg">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="logo.png" width="125px">
+                <p>Being e-commerce store for fashion and lifestyle products,<br>
+                 Our aims at providing a hassle free and enjoyable shopping experience to shoppers across
+                  the country with the widest range of brands and products on its portal.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright"> Copyright 2021</p>
+    </div>
+</div>
+<!--------js for toggle menu-------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+    if(MenuItems.style.maxHeight = "0px");
+    {
+    MenuItems.style.maxHeight = "200px";
+    }
+    else
+    {
+    MenuItems.style.maxHeight = "0px";
+    }
+    }
+</script>
+
+
+    </body>
+</html>
